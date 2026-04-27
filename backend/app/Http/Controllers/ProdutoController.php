@@ -24,10 +24,10 @@ class ProdutoController extends Controller
         try {
 
             $validated = $request->validate([
-                'nome' => 'required|string',
-                'preco_venda' => 'required|numeric',
-                'custo_medio' => 'required|numeric',
-                'estoque' => 'required|integer',
+                'nome' => 'required|string|min:3',
+                'preco_venda' => 'required|numeric|min:0.01',
+                'custo_medio' => 'nullable|numeric',
+                'estoque' => 'nullable|integer',
             ]);
 
             DB::beginTransaction();
