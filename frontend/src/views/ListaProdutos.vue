@@ -82,7 +82,7 @@ const itensSemEstoque = computed(() => {
           <span class="text-lg font-bold text-slate-700">R$ {{ valorTotalEstoque.toFixed(2) }}</span>
         </div>
         <div class="bg-white border border-slate-200 px-4 py-2 rounded-xl shadow-sm">
-          <span class="block text-[10px] font-bold text-slate-400 uppercase tracking-tighter">Críticos (Zero)</span>
+          <span class="block text-[10px] font-bold text-slate-400 uppercase tracking-tighter">Críticos</span>
           <span class="text-lg font-bold text-red-500">{{ itensSemEstoque }}</span>
         </div>
       </div>
